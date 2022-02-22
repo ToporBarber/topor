@@ -5,7 +5,7 @@ $email= $_POST['email'];
 $message= $_POST['message'];
 $phone= $_POST['phone'];
 
-$to = "info@toporbarber.us";
+$to = "toporbarber.ny@gmail.com";
 
 $subject = "Mail From Website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n  Phone = " . $phone . "\r\n Message =" . $message;
