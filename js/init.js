@@ -279,7 +279,7 @@ function topor_tm_imgtosvg(){
 function topor_tm_contact_form(){
 	
 	"use strict";
-	
+	alert("j1");
 	jQuery(".contact_form #send_message").on('click', function(){
 		
 		var name 		= jQuery(".contact_form #name").val();
@@ -289,31 +289,41 @@ function topor_tm_contact_form(){
 		var success     = jQuery(".contact_form .returnmessage").data('success');
 	
 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
+		alert("j2");
 		//checking for blank fields	
 		if(name===''||email===''||phone===''||message===''){
 			
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
+			alert("j3");
 		}
 		else{
+			alert("j4");
 			// Returns successful data submission message when the entered information is stored in database.
 			jQuery.post("modal/contact.html",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_phone: phone}, function(data) {
 				
+				alert("j5");
 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				
 				
 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);		
+					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);	
+					alert("j6");
 				}else{
 					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
+					alert("j7");
 				}
 				
+				alert("j8");
 				if(data===""){
 					jQuery("#contact_form")[0].reset();//To reset form fields on success
+					alert("j9");
 				}
 				
 			});
+			alert("j10");
 		}
+		alert("j11");
 		return false; 
 	});
 }
