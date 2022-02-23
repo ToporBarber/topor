@@ -134,8 +134,8 @@
 function sendEmail(){	
     Email.send({
 	    Host : "smtp.gmail.com",
-	    Username : "info@toporbarber.us",
-	    Password : "password",
+	    Username : "noreply@toporbarber.us",
+	    Password : "noreply123456789",
 	    To : 'info@toporbarber.us',
 	    From : "noreply@toporbarber.us",
 	    Subject : "Website Form",
@@ -144,7 +144,7 @@ function sendEmail(){
 	    		+ "<br> Phone: " + document.getElementById("phone").value
 	    		+ "<br> Email: " + document.getElementById("email").value
     }).then(
-    	    message => alert(message)
+    	    message => alert("Message Sent Succesfully")
     );
 }
 	
