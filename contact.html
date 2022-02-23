@@ -61,7 +61,7 @@
 					<h3>Let's Talk</h3>
 				</div>
 				<div class="contact_list_wrap">
-					<form action="mail.php" method="POST" class="contact_form" id="contact_form">
+					<form onsubmit="sendEmail(); reset(); return false;" class="contact_form" id="contact_form">
 						<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
 						<div class="empty_notice"><span>Please Fill Required Fields</span></div>
 						<div class="first_row">
@@ -128,6 +128,27 @@
 <script src="js/jquery.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+function sendEmail(){	
+    Email.send({
+	    Host : "smtp.gmail.com",
+	    Username : "info@toporbarber.us",
+	    Password : "password",
+	    To : 'info@toporbarber.us',
+	    From : "noreply@toporbarber.us",
+	    Subject : "Website Form",
+	    Body : "Name: " + document.getElementById("name").value
+	    		+ "<br> Email: " + document.getElementById("email").value
+	    		+ "<br> Phone: " + document.getElementById("phone").value
+	    		+ "<br> Email: " + document.getElementById("email").value
+    }).then(
+    	    message => alert(message)
+    );
+}
+	
+</script>
 <!-- /SCRIPTS -->
 
 </body>
