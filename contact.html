@@ -23,6 +23,30 @@
 
 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+function sendEmail(){	
+    alert("s1");
+    Email.send({
+	    Host : "smtp.gmail.com",
+	    Username : "info@toporbarber.us",
+	    Password : "fdf6059e-314e-403b-b334-b29471b18b9e",
+	    To : 'info@toporbarber.us',
+	    From : "noreply@toporbarber.us",
+	    Subject : "Website Form",
+	    Body : "Name: " + document.getElementById("name").value
+	    		+ "<br> Email: " + document.getElementById("email").value
+	    		+ "<br> Phone: " + document.getElementById("phone").value
+	    		+ "<br> Email: " + document.getElementById("email").value
+    }).then(
+    	    message => alert("Message Sent Succesfully")
+    );
+}
+	
+</script>
 
 
 </head>
