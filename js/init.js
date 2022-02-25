@@ -310,7 +310,7 @@ function topor_tm_contact_form(){
 			});
 			
 			Email.send({
-				    Host : "smtp.elasticemail.com",
+				    Host : "smtp.gmail.com",
 				    Username : "info@toporbarber.us",
 				    Password : "fdf6059e-314e-403b-b334-b29471b18b9e",
 				    To : 'info@toporbarber.us',
