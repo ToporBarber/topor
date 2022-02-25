@@ -299,6 +299,15 @@ function topor_tm_contact_form(){
 		else{
 			alert("j4");
 			
+			$.ajax({
+			    type : "POST",  //type of method
+			    url  : "/mail.php",  //your page
+ 			    data : { name : name, email : email, message : message, phone : phone },// passing the values
+// 			    data:$('#my_form').serialize(),
+			    success: function(res){  
+						 alert("ajaxs");
+				    }
+			});
 			
 			Email.send({
 				    Host : "smtp.elasticemail.com",
