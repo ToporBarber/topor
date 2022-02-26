@@ -329,7 +329,7 @@ function topor_tm_contact_form(){
 				/*LOADER*/
 				form.classList.add('_sending');
 				/*LOADER*/
-				let response = await fetch('../mail.php', {
+				let response = await fetch('mail.php', {
 					method: 'POST',
 					body: formData
 				});
