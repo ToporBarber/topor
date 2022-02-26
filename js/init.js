@@ -302,8 +302,8 @@ function topor_tm_contact_form(){
 			$.ajax({
 			    type : "POST",  //type of method
 			    url  : "../mail.php",  //your page
- 			    data : { name : name, email : email, message : message, phone : phone },// passing the values
-// 			    data:$('#my_form').serialize(),
+//  			    data : { name : name, email : email, message : message, phone : phone },// passing the values
+ 			    data:$('#contact_form').serialize(),
 			    success: function(res){  
 						 alert("ajaxs");
 		            },
