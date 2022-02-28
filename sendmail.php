@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 	
 	// CHANGE THE TWO LINES BELOW
-	$email_to = "test@gmail.com";  
+	$email_to = "toporbarber.ny@gmail.com";  
 	// your email address for getting email
 	
 	function died($error) {
