@@ -251,6 +251,74 @@ img.svg{
 	align-items: center;
 	justify-content: space-between;
 }
+
+
+
+
+
+
+
+.topor_tm_button button{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	padding: 14px 70px;
+	line-height: 14px;
+	font-weight: 600;
+	font-family: "Saira";
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-size: 12px;
+	position: relative;
+	overflow: hidden;
+}
+.topor_tm_button button:before,
+.topor_tm_button button:after{
+	position: absolute;
+	content: "";
+	width: 51%;
+	height: 100%;
+	background-color: #FFFFFF;
+	top: 0px;
+	z-index: 1;
+	
+	transition: 1s ease-in-out;
+	transition-delay: .5s;
+}
+.topor_tm_button button:before{left: -51%;}
+.topor_tm_button button:after{right: -51%;}
+.topor_tm_button.topor_tm_waypoint_effect.load button:before{left: 0px;}
+.topor_tm_button.topor_tm_waypoint_effect.load button:after{right: 0px;}
+.topor_tm_button button span{
+	position: relative;
+	z-index: 2;
+}
+.topor_tm_button.no_animation button:before{display: none;}
+.topor_tm_button.no_animation button:after{display: none;}
+.topor_tm_button.no_animation button{background-color: #FFFFFF;}
+.topor_tm_topbar_wrap{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 15;
+	left: 0px;
+	top: 0px;
+	padding: 30px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
 .topor_tm_topbar_wrap .logo img{
 	/*max-width: 100px;
 	max-height: 70px;*/
