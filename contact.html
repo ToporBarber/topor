@@ -85,7 +85,7 @@ function sendEmail(){
 					<h3>Let's Talk</h3>
 				</div>
 				<div class="contact_list_wrap">
-					<form action="https://formspree.io/f/mgedyoyn" class="contact_form" method="post">
+					<form action="https://formspree.io/f/mgedyoyn" class="contact_form" method="POST">
 <!-- 					<form action="sendmail.php" class="contact_form" method="POST"> -->
 <!-- 					<form onsubmit="sendEmail(); reset(); return false;" class="contact_form" id="contact_form"> -->
 						<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
@@ -106,10 +106,10 @@ function sendEmail(){
 								<textarea id="message" name="message" placeholder="Your Message"></textarea>
 							</div>
 						</div>
-<!-- 						<button class="topor_tm_button no_animation" data-position="center" type="submit" id="send_message">Submit</button> -->
-						<div class="topor_tm_button no_animation" data-position="center" type="submit">
+						<div class="topor_tm_button no_animation"><button class="topor_tm_button no_animation" data-position="center" type="submit" id="send_message"><span>Submit</span></button></div>
+<!-- 						<div class="topor_tm_button no_animation" data-position="center" type="submit">
 							<a id="send_message" href="#"><span>Submit</span></a>
-						</div>
+						</div> -->
 					</form>
 				</div>
 				<div class="short_contact_info">
