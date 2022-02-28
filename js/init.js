@@ -310,7 +310,6 @@ function topor_tm_contact_form(){
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		else if (emailTest(email))
 			jQuery('div.email_notice').slideDown(500).delay(2000).slideUp(500);
-		else
 	});
 	
 	jQuery(".contact_form #send_message").on('click', function(){
