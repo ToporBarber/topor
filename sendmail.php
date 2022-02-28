@@ -16,16 +16,14 @@ if(isset($_POST['email'])) {
 	// validation expected data exists
 	if(!isset($_POST['name']) ||
 		!isset($_POST['email']) ||
-		!isset($_POST['mobile']) ||
-		!isset($_POST['subject']) ||
+		!isset($_POST['phone']) ||
 		!isset($_POST['message'])) {
 		died('We are sorry, but there appears to be a problem with the form you submitted.');		
 	}
 	
 	$name = $_POST['name']; // required	
 	$email_from = $_POST['email']; // required	
-	$service = $_POST['subject']; // required
-	$phone = $_POST['mobile']; // required
+	$phone = $_POST['phone']; // required
 	$message = $_POST['message']; // required
 	
 		
@@ -41,7 +39,6 @@ if(isset($_POST['email'])) {
 	$email_message .= "Email: ".clean_string($email_from)."\n";
 	$email_message .= "Contact No.: ".clean_string($phone)."\n";
 	$email_message .= "Message: ".clean_string($message)."\n";
-	$email_message .= "Service: ".clean_string($service)."\n";
 
 	
 // create email headers
@@ -59,7 +56,7 @@ $headers = 'From: '.$email_from."\r\n".
 <html>
 <head></head>
 <body>
-<script type="text/javascript">alert("We have received your request, we will get back to you shortly. Thank You.");window.location.href='contact_us.html';
+<script type="text/javascript">alert("We have received your request, we will get back to you shortly. Thank You.");window.location.href='contact.html';
     </script>
 </body>
 </html>
