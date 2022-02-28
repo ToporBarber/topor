@@ -273,6 +273,10 @@ img.svg{
 	overflow: hidden;
 	cursor:pointer;
 }
+button:disabled,
+button[disabled]{
+  color: #888888;
+}
 .topor_tm_button button:before,
 .topor_tm_button button:after{
 	position: absolute;
