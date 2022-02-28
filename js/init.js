@@ -284,7 +284,7 @@ function topor_tm_contact_form(){
 	
 	"use strict";
 // 	alert("j1");
-// 	$("#send_message").attr("disabled", true);
+	$("#send_message").attr("disabled", true);
 	$("input").keypress(function(){
 
 	    	var name 		= jQuery(".contact_form #name").val();
@@ -293,13 +293,13 @@ function topor_tm_contact_form(){
 		var phone 	= jQuery(".contact_form #phone").val();
 		
 		if(name===''||email===''||phone===''||message===''){
-// 			$("#send_message").attr("disabled", true);
+			$("#send_message").attr("disabled", true);
 		}
 		else if (emailTest(email)){
-// 			$("#send_message").attr("disabled", true);
+			$("#send_message").attr("disabled", true);
 		}
 		else{
-// 			$("#send_message").attr("disabled", false);
+			$("#send_message").attr("disabled", false);
 		}
 	});
 	
@@ -329,17 +329,18 @@ function topor_tm_contact_form(){
 // 		alert("j2");
 		//checking for blank fields	
 		if(name===''||email===''||phone===''||message===''){
-// 			$("#send_message").attr("disabled", true);
+			$("#send_message").attr("disabled", true);
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 // 			alert("j3");
 		}
 		else if (emailTest(email)){
-// 			$("#send_message").attr("disabled", true);
+			$("#send_message").attr("disabled", true);
 			jQuery('div.email_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
-// 			$("#send_message").attr("disabled", false);
+			$("#send_message").attr("disabled", false);
 // 			alert("j4");
+		}
 			
 			
 			
@@ -440,7 +441,7 @@ function topor_tm_contact_form(){
 				
 // 			});
 // // 			alert("j10");
-		}
+// 		}
 // 		alert("j11");
 		return false; 
 	});
