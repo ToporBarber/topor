@@ -300,7 +300,7 @@ function topor_tm_contact_form(){
 			$("#send_message").attr("disabled", false);
 	});
 	
-	$(".topor_tm_button").hover(function(){
+	$(".topor_tm_button").click(function(){
 		var name 		= jQuery(".contact_form #name").val();
 		var email 		= jQuery(".contact_form #email").val();
 		var message 	= jQuery(".contact_form #message").val();
