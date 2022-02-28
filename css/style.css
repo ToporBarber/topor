@@ -1663,6 +1663,13 @@ img.svg{
 	text-align: center;
 	font-weight: 500;
 }
+.topor_tm_contact_wrap .email_notice{
+	color: #F52225;
+	margin-bottom: 7px;
+	display: none;
+	text-align: center;
+	font-weight: 500;
+}
 .topor_tm_contact_wrap .contact_error{
 	color: #F52225;
 	text-align: center;
