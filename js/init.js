@@ -316,40 +316,40 @@ function topor_tm_contact_form(){
 			
 			
 			
-		const form = document.getElementById('contact-form');
-		form.addEventListener('submit', formSend);
+// 		const form = document.getElementById('contact-form');
+// 		form.addEventListener('submit', formSend);
 
-		async function formSend(event) {
-			event.preventDefault();
+// 		async function formSend(event) {
+// 			event.preventDefault();
 
-			let error = formValidate(form);
-			let formData = new FormData(form);
+// 			let error = formValidate(form);
+// 			let formData = new FormData(form);
 
-			if (error === 0) {
-				/*LOADER*/
-				form.classList.add('_sending');
-				/*LOADER*/
-				let response = await fetch('mail.php', {
-					method: 'POST',
-					body: formData
-				});
-				if (response.ok) {
-					let result = await response.json();
-					alert(result.message);
-				// 	formPreview.innerHTML = '';
-					form.reset();
-					/*LOADER*/
-					form.classList.remove('_sending');
-					/*LOADER*/
-				} else {
-					alert('Error!');
-					/*LOADER*/
-					form.classList.remove('_sending');
-					/*LOADER*/
-				}
-			} else {
-				alert('Fill all the fields');
-			}
+// 			if (error === 0) {
+// 				/*LOADER*/
+// 				form.classList.add('_sending');
+// 				/*LOADER*/
+// 				let response = await fetch('mail.php', {
+// 					method: 'POST',
+// 					body: formData
+// 				});
+// 				if (response.ok) {
+// 					let result = await response.json();
+// 					alert(result.message);
+// 				// 	formPreview.innerHTML = '';
+// 					form.reset();
+// 					/*LOADER*/
+// 					form.classList.remove('_sending');
+// 					/*LOADER*/
+// 				} else {
+// 					alert('Error!');
+// 					/*LOADER*/
+// 					form.classList.remove('_sending');
+// 					/*LOADER*/
+// 				}
+// 			} else {
+// 				alert('Fill all the fields');
+// 			}
 			
 			
 			
