@@ -302,7 +302,7 @@ img.svg{
 .topor_tm_button.no_animation button:after{display: none;}
 .topor_tm_button.no_animation button{background-color: #FFFFFF;}
 .topor_tm_button.no_animation button:disabled,
-.topor_tm_button.no_animation button[disabled]{background-color: none;}
+.topor_tm_button.no_animation button[disabled]{background-color: #666666;}
 .topor_tm_topbar_wrap{
 	width: 100%;
 	height: auto;
