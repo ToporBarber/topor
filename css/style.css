@@ -271,6 +271,7 @@ img.svg{
 	font-size: 12px;
 	position: relative;
 	overflow: hidden;
+	cursor:pointer;
 }
 .topor_tm_button button:before,
 .topor_tm_button button:after{
