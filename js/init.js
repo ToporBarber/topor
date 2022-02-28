@@ -284,7 +284,7 @@ function topor_tm_contact_form(){
 	
 	"use strict";
 // 	alert("j1");
-
+	$("#send_message").attr("disabled", true);
 	$("input").keypress(function(){
 
 	    	var name 		= jQuery(".contact_form #name").val();
