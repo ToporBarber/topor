@@ -357,20 +357,22 @@ function topor_tm_contact_form(){
 			
 			
 			
-			Email.send({
-				    Host : "smtp.gmail.com",
-				    Username : "info@toporbarber.us",
-				    Password : "fdf6059e-314e-403b-b334-b29471b18b9e",
-				    To : 'info@toporbarber.us',
-				    From : "noreply@toporbarber.us",
-				    Subject : "Website Form",
-				    Body : "Name: " + document.getElementById("name").value
-						+ "<br> Email: " + document.getElementById("email").value
-						+ "<br> Phone: " + document.getElementById("phone").value
-						+ "<br> Email: " + document.getElementById("email").value
-			    }).then(
-				    message => alert("Message Sent Succesfully")
-			    );
+// 			Email.send({
+// 				    Host : "smtp.gmail.com",
+// 				    Username : "info@toporbarber.us",
+// 				    Password : "fdf6059e-314e-403b-b334-b29471b18b9e",
+// 				    To : 'info@toporbarber.us',
+// 				    From : "noreply@toporbarber.us",
+// 				    Subject : "Website Form",
+// 				    Body : "Name: " + document.getElementById("name").value
+// 						+ "<br> Email: " + document.getElementById("email").value
+// 						+ "<br> Phone: " + document.getElementById("phone").value
+// 						+ "<br> Email: " + document.getElementById("email").value
+// 			    }).then(
+// 				    message => alert("Message Sent Succesfully")
+// 			    );
+			
+			
 // 			alert("j5");
 			// Returns successful data submission message when the entered information is stored in database.
 			jQuery.post("modal/contact.html",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_phone: phone}, function(data) {
