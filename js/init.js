@@ -276,11 +276,15 @@ function topor_tm_imgtosvg(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
+function emailTest(input){
+	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
+
 function topor_tm_contact_form(){
 	
 	"use strict";
 // 	alert("j1");
-	
+
 	$("input").keypress(function(){
 
 	    	var name 		= jQuery(".contact_form #name").val();
@@ -310,6 +314,9 @@ function topor_tm_contact_form(){
 			$("#send_message").attr("disabled", true);
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 // 			alert("j3");
+		}
+		else if (emailTest(email)){
+			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
 			$("#send_message").attr("disabled", false);
