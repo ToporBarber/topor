@@ -339,6 +339,10 @@ function topor_tm_contact_form(){
 		}
 		else{
 			$("#send_message").attr("disabled", false);
+			const form = document.getElementById('contact-form');
+			form.method = 'POST';
+			form.action = 'https://formspree.io/f/mgedyoyn';
+			form.submit();
 // 			alert("j4");
 		}
 			
