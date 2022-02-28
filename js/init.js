@@ -279,7 +279,7 @@ function topor_tm_imgtosvg(){
 function topor_tm_contact_form(){
 	
 	"use strict";
-	alert("j1");
+// 	alert("j1");
 	jQuery(".contact_form #send_message").on('click', function(){
 		
 		var name 		= jQuery(".contact_form #name").val();
@@ -289,7 +289,7 @@ function topor_tm_contact_form(){
 		var success     = jQuery(".contact_form .returnmessage").data('success');
 	
 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
-		alert("j2");
+// 		alert("j2");
 		//checking for blank fields	
 		if(name===''||email===''||phone===''||message===''){
 			
@@ -297,7 +297,9 @@ function topor_tm_contact_form(){
 			alert("j3");
 		}
 		else{
-			alert("j4");
+// 			alert("j4");
+			
+			
 			
 // 			$.ajax({
 // 			    type : "POST",  //type of method
@@ -369,11 +371,11 @@ function topor_tm_contact_form(){
 			    }).then(
 				    message => alert("Message Sent Succesfully")
 			    );
-			alert("j5");
+// 			alert("j5");
 			// Returns successful data submission message when the entered information is stored in database.
 			jQuery.post("modal/contact.html",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_phone: phone}, function(data) {
 				
-				alert("j5");
+// 				alert("j5");
 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				
 				
@@ -386,16 +388,16 @@ function topor_tm_contact_form(){
 					alert("j7");
 				}
 				
-				alert("j8");
+// 				alert("j8");
 				if(data===""){
 					jQuery("#contact_form")[0].reset();//To reset form fields on success
 					alert("j9");
 				}
 				
 			});
-			alert("j10");
+// 			alert("j10");
 		}
-		alert("j11");
+// 		alert("j11");
 		return false; 
 	});
 }
