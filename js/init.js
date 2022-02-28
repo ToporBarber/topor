@@ -280,9 +280,11 @@ function topor_tm_contact_form(){
 	
 	"use strict";
 // 	alert("j1");
-	if(name===''||email===''||phone===''||message===''){
-			$("#send_message").attr("disabled", true);
-	}
+	if(name===''||email===''||phone===''||message==='')
+		$("#send_message").attr("disabled", true);
+	else
+		$("#send_message").attr("disabled", false);
+	
 	jQuery(".contact_form #send_message").on('click', function(){
 		
 		var name 		= jQuery(".contact_form #name").val();
