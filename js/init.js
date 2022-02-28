@@ -277,7 +277,7 @@ function topor_tm_imgtosvg(){
 // -----------------------------------------------------
 
 function emailTest(input){
-	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input);
 }
 
 function topor_tm_contact_form(){
