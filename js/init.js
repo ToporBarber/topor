@@ -294,6 +294,8 @@ function topor_tm_contact_form(){
 		
 		if(name===''||email===''||phone===''||message==='')
 			$("#send_message").attr("disabled", true);
+		else if (emailTest(email))
+			$("#send_message").attr("disabled", true);
 		else
 			$("#send_message").attr("disabled", false);
 	});
