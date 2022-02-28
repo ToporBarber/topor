@@ -292,12 +292,15 @@ function topor_tm_contact_form(){
 		var message 	= jQuery(".contact_form #message").val();
 		var phone 	= jQuery(".contact_form #phone").val();
 		
-		if(name===''||email===''||phone===''||message==='')
+		if(name===''||email===''||phone===''||message===''){
 // 			$("#send_message").attr("disabled", true);
-		else if (emailTest(email))
+		}
+		else if (emailTest(email)){
 // 			$("#send_message").attr("disabled", true);
-		else
+		}
+		else{
 // 			$("#send_message").attr("disabled", false);
+		}
 	});
 	
 	$(".topor_tm_button").click(function(){
@@ -306,10 +309,12 @@ function topor_tm_contact_form(){
 		var message 	= jQuery(".contact_form #message").val();
 		var phone 	= jQuery(".contact_form #phone").val();
 		
-		if(name===''||email===''||phone===''||message==='')
+		if(name===''||email===''||phone===''||message===''){
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
-		else if (emailTest(email))
+		}
+		else if (emailTest(email)){
 			jQuery('div.email_notice').slideDown(500).delay(2000).slideUp(500);
+		}
 	});
 	
 	jQuery(".contact_form #send_message").on('click', function(){
