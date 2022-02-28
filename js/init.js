@@ -316,7 +316,7 @@ function topor_tm_contact_form(){
 // 			alert("j3");
 		}
 		else if (emailTest(email)){
-			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
+			jQuery('div.email_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
 			$("#send_message").attr("disabled", false);
