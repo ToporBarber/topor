@@ -294,7 +294,7 @@ function topor_tm_contact_form(){
 		if(name===''||email===''||phone===''||message===''){
 			
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
-			alert("j3");
+// 			alert("j3");
 		}
 		else{
 // 			alert("j4");
@@ -375,20 +375,20 @@ function topor_tm_contact_form(){
 			
 // 			alert("j5");
 			// Returns successful data submission message when the entered information is stored in database.
-			jQuery.post("modal/contact.html",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_phone: phone}, function(data) {
+// 			jQuery.post("modal/contact.html",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_phone: phone}, function(data) {
 				
-// 				alert("j5");
-				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
+// // 				alert("j5");
+// 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				
 				
-				if(jQuery(".contact_form .returnmessage span.contact_error").length){
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);	
-					alert("j6");
-				}else{
-					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
-					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
-					alert("j7");
-				}
+// 				if(jQuery(".contact_form .returnmessage span.contact_error").length){
+// 					jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);	
+// 					alert("j6");
+// 				}else{
+// 					jQuery(".contact_form .returnmessage").append("<span class='contact_success'>"+ success +"</span>");
+// 					jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
+// 					alert("j7");
+// 				}
 				
 // 				alert("j8");
 				if(data===""){
