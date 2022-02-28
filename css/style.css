@@ -273,8 +273,8 @@ img.svg{
 	overflow: hidden;
 	cursor:pointer;
 }
-button:disabled,
-button[disabled]{
+.topor_tm_button button:disabled,
+.topor_tm_button button[disabled]{	
   color: #888888;
 }
 .topor_tm_button button:before,
@@ -301,6 +301,8 @@ button[disabled]{
 .topor_tm_button.no_animation button:before{display: none;}
 .topor_tm_button.no_animation button:after{display: none;}
 .topor_tm_button.no_animation button{background-color: #FFFFFF;}
+.topor_tm_button.no_animation button:disabled,
+.topor_tm_button.no_animation button[disabled]{background-color: none;}
 .topor_tm_topbar_wrap{
 	width: 100%;
 	height: auto;
