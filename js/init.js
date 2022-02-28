@@ -300,6 +300,18 @@ function topor_tm_contact_form(){
 			$("#send_message").attr("disabled", false);
 	});
 	
+	$("button").hover(function(){
+		var name 		= jQuery(".contact_form #name").val();
+		var email 		= jQuery(".contact_form #email").val();
+		var message 	= jQuery(".contact_form #message").val();
+		var phone 	= jQuery(".contact_form #phone").val();
+		
+		if(name===''||email===''||phone===''||message==='')
+			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
+		else if (emailTest(email))
+			jQuery('div.email_notice').slideDown(500).delay(2000).slideUp(500);
+		else
+	});
 	
 	jQuery(".contact_form #send_message").on('click', function(){
 		
